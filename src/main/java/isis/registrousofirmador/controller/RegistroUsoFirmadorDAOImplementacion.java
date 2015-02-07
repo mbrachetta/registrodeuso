@@ -1,5 +1,7 @@
 package isis.registrousofirmador.controller;
 
+import java.util.List;
+
 import javax.ejb.Stateful;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
@@ -17,7 +19,6 @@ public class RegistroUsoFirmadorDAOImplementacion implements RegistroUsoFirmador
     private EntityManager em;
     
 
-    @Override
     public void registrarUso (RegistroUsoFirmador uso) {
     	System.out.println("ESTOY PERSISTIENDO UN USO");
    		em.persist(uso);
