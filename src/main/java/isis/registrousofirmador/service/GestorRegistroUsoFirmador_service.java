@@ -14,8 +14,6 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.ResponseBuilder;
 import javax.ws.rs.core.Response.Status;
 
-import org.jboss.resteasy.spi.validation.ValidateRequest;
-
 import isis.registrousofirmador.controller.RegistroUsoFirmadorDAO;
 import isis.registrousofirmador.model.RegistroUsoFirmador;
 
@@ -35,7 +33,7 @@ public class GestorRegistroUsoFirmador_service {
 		
 	@POST
     @Produces("application/octet-stream")
-    public Response getRegistroUso(@FormParam("CN") String CN,
+    public Response registrarUso  (@FormParam("CN") String CN,
     							   @FormParam("title") String title, 
     							   @FormParam("OU") String OU,
     							   @FormParam("O") String O,
@@ -57,7 +55,7 @@ public class GestorRegistroUsoFirmador_service {
 				newUso.setFecha(new java.sql.Date(Calendar.getInstance().getTimeInMillis()));
 				uso.registrarUso(newUso);
 			
-				response = Response.ok();
+				response = Response.ok((Object)true);
 				return response.build();
 			
 		}
