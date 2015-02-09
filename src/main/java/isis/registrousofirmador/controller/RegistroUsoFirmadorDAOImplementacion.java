@@ -1,7 +1,5 @@
 package isis.registrousofirmador.controller;
 
-import java.util.List;
-
 import javax.ejb.Stateful;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;

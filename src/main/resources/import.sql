@@ -1,2 +1,2 @@
 -- You can use this file to load seed data into the database using SQL statements
-insert into RegistroUsoFirmador (id, name, email, title, organization, ou, state, country) values (0, 'Mariana Brachetta', 'mbrachetta@i-sis.com.ar', 'Socio Gerente', 'isis', 'Gerenci IT', 'Mendoza', 'AR') 
+insert into RegistroUsoFirmador (id, name, email, title, organization, ou, state, country) values (0, 'Mariana Brachetta', 'mbrachetta@i-sis.com.ar', 'Socio Gerente', 'isis', 'Gerencia IT', 'Mendoza', 'AR') 
