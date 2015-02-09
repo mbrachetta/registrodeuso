@@ -18,7 +18,7 @@ import isis.registrousofirmador.controller.RegistroUsoFirmadorDAO;
 import isis.registrousofirmador.model.RegistroUsoFirmador;
 
 
-@Path ("/")
+@Path ("")
 public class GestorRegistroUsoFirmador_service {
 
 	@Inject
