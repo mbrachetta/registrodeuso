@@ -23,30 +23,13 @@ public class RegistroUsoFirmador implements Serializable {
     @GeneratedValue
     private Long id;
 
-	@NotNull
-	@Pattern(regexp = "[A-Za-zñáéíóúÑÁÉÍÓÚ\\s]{2,50}$", message = "debe contener sólo letras y espacios")
     private String name;
-
     private String title;
-    
     private String ou;
-    
-	@NotNull
-	@NotEmpty
-	@Size (min = 1, max = 255)
     private String organization;
-
-    @NotNull
-    @NotEmpty
-    @Email (message= "Debe colocar una dirección de email bien formada")
     private String email;
-
     private String state;
-    
-	@Pattern(regexp = "[A-Z][A-Z]", message = "debe contener un código de país válido")
     private String country;
-
-    @NotNull
     private Date fecha;
 
         
