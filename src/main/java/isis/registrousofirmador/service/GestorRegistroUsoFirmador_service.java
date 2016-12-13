@@ -32,7 +32,7 @@ public class GestorRegistroUsoFirmador_service {
 
 		
 	@POST
-    @Produces("application/octet-stream")
+    @Produces("application/xml")
     public Response registrarUso  (@FormParam("CN") String CN,
     							   @FormParam("title") String title, 
     							   @FormParam("OU") String OU,
@@ -55,7 +55,7 @@ public class GestorRegistroUsoFirmador_service {
 				newUso.setFecha(new java.sql.Date(Calendar.getInstance().getTimeInMillis()));
 				uso.registrarUso(newUso);
 			
-				response = Response.ok((Object)true);
+				response = Response.ok();
 				return response.build();
 			
 		}
