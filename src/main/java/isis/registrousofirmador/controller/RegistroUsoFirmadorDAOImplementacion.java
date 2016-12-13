@@ -18,9 +18,13 @@ public class RegistroUsoFirmadorDAOImplementacion implements RegistroUsoFirmador
     
 
     public void registrarUso (RegistroUsoFirmador uso) {
-    	System.out.println("VOY A PERSISTIR EL USO DE:");
+    	System.out.println("SE VA A PERSISTIR EL USO DE:");
     	System.out.println(uso.getName());
+    	System.out.println(uso.getOrganization());
+    	System.out.println(uso.getTitle());
+    	System.out.println(uso.getEmail());
+    	System.out.println(uso.getFecha());
    		em.persist(uso);
-   		System.out.println("PASE OK");
+   		System.out.println("SE PERSISTIO OK.");
     }
 }

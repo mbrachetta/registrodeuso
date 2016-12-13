@@ -44,14 +44,6 @@ public class GestorRegistroUsoFirmador_service {
 			ResponseBuilder response = null;
 		
 			try {
-				System.out.println(CN);
-				System.out.println(title);
-				System.out.println(OU);
-				System.out.println(O);
-				System.out.println(email);
-				System.out.println(ST);
-				System.out.println(C);
-				
 				newUso = new RegistroUsoFirmador();
 				newUso.setName(CN);
 				newUso.setTitle(title);
